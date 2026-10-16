@@ -26,8 +26,7 @@
   \
   #work_name
   \
-  \
-  *«#theme_name»*
+  #upper(theme_name)
   \
   \
   #grid(
@@ -41,7 +40,6 @@
       #if students.len() > 1 [Студенты] else [Студент]
       ] else [Студент]
       гр. #group\
-      
       #if type(students) == array [
         #for i in students [
           #long_line #i\

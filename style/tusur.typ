@@ -13,6 +13,9 @@
   set heading(
     numbering: "1.1.1",
   )
+  set page(numbering: "1")
+
+
   show heading: set align(center)
   show heading: set par(leading: 1em)
   show heading: set text(
@@ -22,6 +25,7 @@
   show heading: it => block[
     #upper(it)
   ]
+  
 
   body
 }

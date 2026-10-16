@@ -13,6 +13,7 @@
   
 ) = [
   #set par(justify: false)
+  #set page(numbering: none)
   #set align(center)
   #set rect(stroke: none)
   Министерство науки и высшего образования Российской Федерации Федеральное государственное автономное образовательное учреждение высшего образования
@@ -35,6 +36,7 @@
     rect(),
     rect(),
     rect([
+      #set par(leading: 1em)
       #let long_line = "__________"
       #if type(students) == array [
       #if students.len() > 1 [Студенты] else [Студент]

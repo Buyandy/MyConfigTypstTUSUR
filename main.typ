@@ -11,5 +11,6 @@
   current_year: 2026,
   city: "Томск"
 )
+#include "additions/content.typ"
 
 #include "src/1 chapter.typ"

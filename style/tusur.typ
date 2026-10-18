@@ -1,5 +1,6 @@
 
 #let tusur_GOST(body) = {
+  set par(justify: true)
   set text(font: "Times New Roman", size: 14pt)
   set par(leading: 1.5em)
   set page(margin: (

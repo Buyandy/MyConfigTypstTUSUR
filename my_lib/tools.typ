@@ -3,7 +3,7 @@
 
 
 
-#let mytable(columns: int, data: array, name: str) = [
+#let my_table(columns: int, data: array, name: str) = [
   #figure(
     table(
       // columns: 3,
@@ -16,12 +16,22 @@
   )
 
 ]
-#let introduction() = [
+#let my_introduction() = [
   #figure(
     [],                    // body (обязательный позиционный, пустой)
     kind: "chapter",
     supplement: none,
     caption: [ВВЕДЕНИЕ],   // именно это попадёт в оглавление
     numbering: none,
+  )
+]
+
+#let my_image(img: image, name: content) = [
+  #set figure.caption(separator: " — ")
+  #figure(
+    img,
+    caption: name,
+    supplement: [Рисунок],
+    
   )
 ]

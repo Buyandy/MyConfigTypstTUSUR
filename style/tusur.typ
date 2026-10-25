@@ -21,6 +21,7 @@
   set rect(// растяжка по горизонтали для grid обьектов
     width: 100%
   )
+  show image: set align(center)// Центрирование image
 
 
   show heading: set align(center)// Центрирование заголовков

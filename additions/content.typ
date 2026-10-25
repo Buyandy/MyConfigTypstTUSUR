@@ -7,5 +7,6 @@
 
 #outline(
   title: "Содержимое",
-  indent: 0.5em
+  indent: 0.5em,
+  target: heading.where(outlined: true).or(figure.where(kind: "chapter")),
 )

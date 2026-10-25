@@ -14,13 +14,14 @@
     caption: name,
     supplement: [Таблица]
   )
-]
 
-#let introduction() = {
-  heading(numbering: none)[Введение]
-  show: ratchet.with(
-    fig-depth: 2,
-    fig-outline: "1.1",
-    init: "reset",
-  )// нужен чтоб не засчитал Введение за заголовком
-}
+]
+#let introduction() = [
+  #figure(
+    [],                    // body (обязательный позиционный, пустой)
+    kind: "chapter",
+    supplement: none,
+    caption: [ВВЕДЕНИЕ],   // именно это попадёт в оглавление
+    numbering: none,
+  )
+]

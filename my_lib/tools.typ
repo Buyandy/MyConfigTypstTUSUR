@@ -1,4 +1,4 @@
-
+#import "@preview/ratchet:0.0.4": *
 
 
 
@@ -15,3 +15,12 @@
     supplement: [Таблица]
   )
 ]
+
+#let introduction() = {
+  heading(numbering: none)[Введение]
+  show: ratchet.with(
+    fig-depth: 2,
+    fig-outline: "1.1",
+    init: "reset",
+  )// нужен чтоб не засчитал Введение за заголовком
+}

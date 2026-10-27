@@ -27,7 +27,6 @@
 ]
 
 #let my_image(img: image, name: content) = [
-  #set figure.caption(separator: " — ")
   #figure(
     img,
     caption: name,

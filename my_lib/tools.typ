@@ -4,12 +4,14 @@
 
 
 #let my_table(columns: int, data: array, name: str) = [
+  #set par(leading: 0.65em)
   #figure(
     table(
       // columns: 3,
       columns: (1fr,) * columns,
-      ..array(data)
+      ..array(data),
       // table.header([Hello],[world],[!])
+      align: center + horizon
     ),
     caption: name,
     supplement: [Таблица]
@@ -31,6 +33,5 @@
     img,
     caption: name,
     supplement: [Рисунок],
-    
   )
 ]
